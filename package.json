@@ -1,0 +1,20 @@
+{
+	"name": "homeschool-tracker",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "tsc -p . -w",
+		"server": "cd server && npm start",
+		"client": "cd react_client && npm start",
+		"setupDB": "cd server/database/SQL && python dbSetup.py",
+		"start": "concurrently \"npm run build\" \"npm run server\" \"npm run client\""
+	},
+	"author": "Makai Post (post.makai@gmail.com)",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^9.2.1"
+	},
+	"dependencies": {
+		"react-modal": "^3.16.3"
+	}
+}

@@ -14,7 +14,7 @@ export type HierarchyNode = {
 	children: HierarchyNode[]
 }
 
-/** Represents a subject that can be assigned to lessons and tracked in the homeschool tracker application.
+/** Represents a subject that can be assigned to lessons and tracked in the rooted learning application.
  * 
  * Examples of subjects include "Math", "Science", "History", etc.
  */

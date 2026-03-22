@@ -3,6 +3,12 @@
 -- ---------------------------
 CREATE DATABASE school;
 
+
+
+-- ---------------------------
+-- ---       TABLES        ---
+-- ---------------------------
+
 CREATE TABLE school.group (
 	id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
@@ -32,6 +38,8 @@ CREATE TABLE school.subject (
 	FOREIGN KEY (parentId) REFERENCES school.subject(id) ON DELETE SET NULL,
 	UNIQUE KEY uq_subject_group_name_key (groupId, nameKey)
 );
+
+
 
 -- ---------------------------
 -- ---       VIEWS         ---

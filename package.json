@@ -5,9 +5,12 @@
 	"scripts": {
 		"build": "tsc -p . -w",
 		"server": "cd server && npm start",
+		"server:dev": "cd server && npm run dev",
 		"client": "cd react_client && npm start",
+		"client:dev": "cd react_client && npm run dev",
 		"setupDB": "cd server/database/SQL && python dbSetup.py",
-		"start": "concurrently \"npm run build\" \"npm run server\" \"npm run client\""
+		"start": "concurrently \"npm run build\" \"npm run server\" \"npm run client\"",
+		"dev": "concurrently \"npm run build\" \"npm run server:dev\" \"npm run client:dev\""
 	},
 	"author": "Makai Post (post.makai@gmail.com)",
 	"license": "ISC",

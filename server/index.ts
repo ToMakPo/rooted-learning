@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 // app.use('/api', userRoutes)
 // app.use('/api', financeRoutes)
 // app.use('/api', imageSetRoutes)
-app.use('/', require('./routes').default)
+// app.use('/', require('./routes').default)
 
 
 /// START SERVER ///

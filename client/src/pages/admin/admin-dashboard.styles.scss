@@ -1,0 +1,26 @@
+#admin-dashboard-page {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+
+	background-color: lightgray;
+
+	.admin-dashboard-section {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		border: 3px inset lightgray;
+		border-radius: 0.5rem;
+		padding: 1rem;
+		background-color: white;
+		position: relative;
+
+		.add-button {
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+		}
+	}
+}

@@ -6,7 +6,7 @@
     "start": "ts-node index.ts",
 		"dev": "nodemon index.ts",
     "test": "jest",
-		"setupDB": "python3 ./database/sql/dbSetup.py"
+    "setupDB": "python ./database/sql/dbSetup.py"
   },
   "author": "Makai Post (post.makai@gmail.com)",
   "license": "ISC",
